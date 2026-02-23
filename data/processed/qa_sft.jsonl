@@ -1,0 +1,33 @@
+{"instruction": "What format should artwork be provided in when redrawing?", "input": "", "output": "All redrawn artwork must be supplied strictly as vector art. Vector artwork is resolution-independent, meaning it can be scaled up or down without losing quality. This is critical for production because decoration methods like screen printing, embroidery, pad printing, and debossing rely on clean paths rather than pixels. Raster images (JPG, PNG, PSD) can cause blurry edges, inaccurate line weights, and production failures when scaled."}
+{"instruction": "What are the preferred file formats for vector artwork?", "input": "", "output": "The approved file formats are AI (Adobe Illustrator), EPS, and vector-based PDF. These formats preserve editable paths, precise line weights, and accurate color data. PDFs containing embedded raster images are not acceptable."}
+{"instruction": "How should fonts be handled in vector artwork?", "input": "", "output": "All fonts must be converted to outlines or paths before submission."}
+{"instruction": "Why must fonts be outlined before production?", "input": "", "output": "Vendors may not have the same fonts installed. Leaving fonts live can cause substitutions and layout issues. Outlining guarantees the artwork prints exactly as approved."}
+{"instruction": "What color system should be used for imprinting artwork?", "input": "", "output": "Pantone Solid Coated (C) colors must be used for all imprint methods."}
+{"instruction": "Why should RGB and CMYK be avoided for screen and pad printing?", "input": "", "output": "RGB and CMYK are device-dependent systems. Screen and pad printing rely on mixed inks, which can cause color shifts if RGB/CMYK are used."}
+{"instruction": "When is CMYK acceptable?", "input": "", "output": "Only for full-color digital printing or heat transfer."}
+{"instruction": "Why are minimum line weights critical in screen printing?", "input": "", "output": "Ink spreads during printing. Thin lines may fill in or disappear."}
+{"instruction": "What are the minimum specs for notebook screen printing, and why?", "input": "", "output": "Positive: 1 pt, Negative: 1.5–2 pt, Text: ~9 pt sans-serif. Prevents ink spread issues."}
+{"instruction": "What are the minimum specs for apparel and tote screen printing?", "input": "", "output": "Positive: 1.5 pt, Negative: 2–3 pt, Text: 14 pt sans-serif."}
+{"instruction": "Why are gradients generally not allowed in screen printing?", "input": "", "output": "Gradients appear banded or muddy. Only halftones are acceptable."}
+{"instruction": "What are halftones and why are 35–45 LPI recommended?", "input": "", "output": "Halftones simulate gradients using dots. 35–45 LPI balances detail and stability."}
+{"instruction": "Why does pad printing require special design considerations?", "input": "", "output": "Pad printing involves curved surfaces where small details can distort."}
+{"instruction": "What are the minimum specs for pad printing and why?", "input": "", "output": "Positive: 1 pt, Negative: 1.5 pt, Text: 8–10 pt for clean transfer."}
+{"instruction": "Why should tight color registration be avoided in pad printing?", "input": "", "output": "Pad movement can cause misalignment between colors."}
+{"instruction": "What is color trapping and why is it important?", "input": "", "output": "Trapping overlaps colors slightly to prevent gaps from misregistration."}
+{"instruction": "Why does embroidery require extreme simplification?", "input": "", "output": "Artwork is converted into stitches; fine details cannot be reproduced accurately."}
+{"instruction": "What are the minimum embroidery specs and their purpose?", "input": "", "output": "Letter height: 24 pt, Gap: 2.5 pt for stitch clarity."}
+{"instruction": "Why are sans-serif or block fonts recommended for embroidery?", "input": "", "output": "Uniform strokes translate better into thread."}
+{"instruction": "How are small symbols like ® handled in embroidery?", "input": "", "output": "They are simplified or removed to maintain clarity."}
+{"instruction": "Why should laser engraving avoid ultra-thin lines?", "input": "", "output": "Thin lines engrave inconsistently and may appear as scratches."}
+{"instruction": "What are the recommended minimum specs for laser engraving?", "input": "", "output": "Positive: 0.5–1 pt, Negative: 0.5 pt, Text: 6 pt."}
+{"instruction": "Why does debossing require thicker artwork?", "input": "", "output": "Pressure can collapse thin lines."}
+{"instruction": "What are the minimum specs for debossing and embossing?", "input": "", "output": "Positive: 1–2 pt, Negative: 2 pt, Text: 12 pt."}
+{"instruction": "Why do internal counters often fill in during debossing?", "input": "", "output": "Soft materials compress, closing small internal spaces."}
+{"instruction": "Why is heat transfer ideal for complex artwork?", "input": "", "output": "Supports fine details, gradients, and full color."}
+{"instruction": "What are the minimum specs for heat transfer artwork?", "input": "", "output": "Positive: 0.5 pt, Negative: 0.75 pt."}
+{"instruction": "Why do small floating elements need special treatment?", "input": "", "output": "They may peel or lift; outlines or bleed improve durability."}
+{"instruction": "Why must artwork respect physical production limits?", "input": "", "output": "Ignoring limits causes print failures and rework."}
+{"instruction": "What font adjustments are typically required during redraws?", "input": "", "output": "Thicker strokes, simplification, or font replacement."}
+{"instruction": "How should colors be handled during redraws?", "input": "", "output": "Pantone colors must be assigned intentionally."}
+{"instruction": "Why is simplification essential for embroidery and embossing?", "input": "", "output": "Ensures durability, readability, and clean production."}
+{"instruction": "who is the ceo of idynamics software india", "input": "", "output": "NagaRajan is the C.E.O of idynamics software india"}

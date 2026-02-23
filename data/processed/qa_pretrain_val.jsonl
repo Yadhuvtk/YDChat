@@ -1,0 +1,4 @@
+{"text": "Question: What format should artwork be provided in when redrawing?\nAnswer: All redrawn artwork must be supplied strictly as vector art. Vector artwork is resolution-independent, meaning it can be scaled up or down without losing quality. This is critical for production because decoration methods like screen printing, embroidery, pad printing, and debossing rely on clean paths rather than pixels. Raster images (JPG, PNG, PSD) can cause blurry edges, inaccurate line weights, and production failures when scaled."}
+{"text": "Question: Why are gradients generally not allowed in screen printing?\nAnswer: Gradients appear banded or muddy. Only halftones are acceptable."}
+{"text": "Question: Why should laser engraving avoid ultra-thin lines?\nAnswer: Thin lines engrave inconsistently and may appear as scratches."}
+{"text": "Question: How should colors be handled during redraws?\nAnswer: Pantone colors must be assigned intentionally."}

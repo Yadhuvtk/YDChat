@@ -1,0 +1,29 @@
+{"text": "Question: What are the preferred file formats for vector artwork?\nAnswer: The approved file formats are AI (Adobe Illustrator), EPS, and vector-based PDF. These formats preserve editable paths, precise line weights, and accurate color data. PDFs containing embedded raster images are not acceptable."}
+{"text": "Question: How should fonts be handled in vector artwork?\nAnswer: All fonts must be converted to outlines or paths before submission."}
+{"text": "Question: Why must fonts be outlined before production?\nAnswer: Vendors may not have the same fonts installed. Leaving fonts live can cause substitutions and layout issues. Outlining guarantees the artwork prints exactly as approved."}
+{"text": "Question: What color system should be used for imprinting artwork?\nAnswer: Pantone Solid Coated (C) colors must be used for all imprint methods."}
+{"text": "Question: Why should RGB and CMYK be avoided for screen and pad printing?\nAnswer: RGB and CMYK are device-dependent systems. Screen and pad printing rely on mixed inks, which can cause color shifts if RGB/CMYK are used."}
+{"text": "Question: When is CMYK acceptable?\nAnswer: Only for full-color digital printing or heat transfer."}
+{"text": "Question: Why are minimum line weights critical in screen printing?\nAnswer: Ink spreads during printing. Thin lines may fill in or disappear."}
+{"text": "Question: What are the minimum specs for notebook screen printing, and why?\nAnswer: Positive: 1 pt, Negative: 1.5–2 pt, Text: ~9 pt sans-serif. Prevents ink spread issues."}
+{"text": "Question: What are the minimum specs for apparel and tote screen printing?\nAnswer: Positive: 1.5 pt, Negative: 2–3 pt, Text: 14 pt sans-serif."}
+{"text": "Question: What are halftones and why are 35–45 LPI recommended?\nAnswer: Halftones simulate gradients using dots. 35–45 LPI balances detail and stability."}
+{"text": "Question: Why does pad printing require special design considerations?\nAnswer: Pad printing involves curved surfaces where small details can distort."}
+{"text": "Question: What are the minimum specs for pad printing and why?\nAnswer: Positive: 1 pt, Negative: 1.5 pt, Text: 8–10 pt for clean transfer."}
+{"text": "Question: Why should tight color registration be avoided in pad printing?\nAnswer: Pad movement can cause misalignment between colors."}
+{"text": "Question: What is color trapping and why is it important?\nAnswer: Trapping overlaps colors slightly to prevent gaps from misregistration."}
+{"text": "Question: Why does embroidery require extreme simplification?\nAnswer: Artwork is converted into stitches; fine details cannot be reproduced accurately."}
+{"text": "Question: What are the minimum embroidery specs and their purpose?\nAnswer: Letter height: 24 pt, Gap: 2.5 pt for stitch clarity."}
+{"text": "Question: Why are sans-serif or block fonts recommended for embroidery?\nAnswer: Uniform strokes translate better into thread."}
+{"text": "Question: How are small symbols like ® handled in embroidery?\nAnswer: They are simplified or removed to maintain clarity."}
+{"text": "Question: What are the recommended minimum specs for laser engraving?\nAnswer: Positive: 0.5–1 pt, Negative: 0.5 pt, Text: 6 pt."}
+{"text": "Question: Why does debossing require thicker artwork?\nAnswer: Pressure can collapse thin lines."}
+{"text": "Question: What are the minimum specs for debossing and embossing?\nAnswer: Positive: 1–2 pt, Negative: 2 pt, Text: 12 pt."}
+{"text": "Question: Why do internal counters often fill in during debossing?\nAnswer: Soft materials compress, closing small internal spaces."}
+{"text": "Question: Why is heat transfer ideal for complex artwork?\nAnswer: Supports fine details, gradients, and full color."}
+{"text": "Question: What are the minimum specs for heat transfer artwork?\nAnswer: Positive: 0.5 pt, Negative: 0.75 pt."}
+{"text": "Question: Why do small floating elements need special treatment?\nAnswer: They may peel or lift; outlines or bleed improve durability."}
+{"text": "Question: Why must artwork respect physical production limits?\nAnswer: Ignoring limits causes print failures and rework."}
+{"text": "Question: What font adjustments are typically required during redraws?\nAnswer: Thicker strokes, simplification, or font replacement."}
+{"text": "Question: Why is simplification essential for embroidery and embossing?\nAnswer: Ensures durability, readability, and clean production."}
+{"text": "Question: who is the ceo of idynamics software india\nAnswer: NagaRajan is the C.E.O of idynamics software india"}

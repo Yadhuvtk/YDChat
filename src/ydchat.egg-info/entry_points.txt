@@ -1,0 +1,6 @@
+[console_scripts]
+ydchat-chat = ydchat.infer.chat_cli:main
+ydchat-generate = ydchat.infer.generate:main
+ydchat-serve = ydchat.infer.server:main
+ydchat-sft = ydchat.train.sft:main
+ydchat-train = ydchat.train.pretrain:main

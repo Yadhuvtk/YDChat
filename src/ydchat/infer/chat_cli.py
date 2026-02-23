@@ -1,8 +1,26 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 
 from ydchat.infer.generate import generate_text, load_model_and_tokenizer, resolve_device, set_seed
+
+
+def format_instruction_prompt(instruction: str, input_text: str = "") -> str:
+    return (
+        "### Instruction:\n"
+        f"{instruction.strip()}\n"
+        "### Input:\n"
+        f"{input_text.strip()}\n"
+        "### Response:\n"
+    )
+
+
+def clean_reply(generated: str, prompt: str) -> str:
+    reply = generated[len(prompt) :] if generated.startswith(prompt) else generated
+    for stop_tag in ["### Instruction:", "### Input:", "### Response:", "### User:", "### Assistant:"]:
+        if stop_tag in reply:
+            reply = reply.split(stop_tag, 1)[0]
+    return reply.strip()
 
 
 def parse_args() -> argparse.Namespace:
@@ -11,6 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--checkpoint", required=True)
     parser.add_argument("--tokenizer", required=True)
     parser.add_argument("--device", default="cuda")
+    parser.add_argument("--mode", choices=["instruction", "chat"], default="instruction")
     parser.add_argument("--max-new-tokens", type=int, default=128)
     parser.add_argument("--temperature", type=float, default=0.8)
     parser.add_argument("--top-k", type=int, default=40)
@@ -42,11 +61,16 @@ def main() -> None:
         if user_text.lower() in {"/exit", "exit", "quit"}:
             break
 
-        history += f"### User:\n{user_text}\n### Assistant:\n"
+        if args.mode == "instruction":
+            prompt = format_instruction_prompt(user_text, "")
+        else:
+            history += f"### User:\n{user_text}\n### Assistant:\n"
+            prompt = history
+
         generated = generate_text(
             model,
             tokenizer,
-            prompt=history,
+            prompt=prompt,
             max_new_tokens=args.max_new_tokens,
             temperature=args.temperature,
             top_k=args.top_k,
@@ -55,14 +79,11 @@ def main() -> None:
             device=device,
         )
 
-        reply = generated[len(history) :]
-        stop_tag = "### User:"
-        if stop_tag in reply:
-            reply = reply.split(stop_tag, 1)[0]
-        reply = reply.strip()
-
+        reply = clean_reply(generated, prompt)
         print(f"YDChat: {reply}")
-        history += reply + "\n"
+
+        if args.mode == "chat":
+            history += reply + "\n"
 
 
 if __name__ == "__main__":

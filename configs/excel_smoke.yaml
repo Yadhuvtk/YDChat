@@ -1,0 +1,50 @@
+model:
+  vocab_size: 512
+  seq_len: 256
+  n_layers: 4
+  d_model: 256
+  n_heads: 4
+  mlp_ratio: 4.0
+  dropout: 0.1
+  rms_norm_eps: 1.0e-5
+  rope_theta: 10000.0
+  init_std: 0.02
+  tie_embeddings: true
+
+optim:
+  lr: 3.0e-4
+  weight_decay: 0.1
+  beta1: 0.9
+  beta2: 0.95
+  eps: 1.0e-8
+  fused: true
+
+train:
+  micro_batch_size: 1
+  grad_accum_steps: 8
+  max_steps: 200
+  warmup_steps: 20
+  log_interval: 10
+  eval_interval: 25
+  eval_batches: 4
+  save_interval: 25
+  max_grad_norm: 1.0
+  precision: bf16
+  compile: false
+
+data:
+  train_path: data/processed/qa_pretrain_train.jsonl
+  val_path: data/processed/qa_pretrain_val.jsonl
+  tokenizer_path: artifacts/tokenizer/ydchat_excel.model
+  jsonl_key: text
+  num_workers: 0
+
+runtime:
+  output_dir: checkpoints/excel-pretrain
+  device: cuda
+  seed: 1337
+
+sft:
+  data_path: data/processed/qa_sft_train.jsonl
+  val_fraction: 0.1
+  max_samples: null
