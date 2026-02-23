@@ -197,6 +197,36 @@ See `COMMERCIALIZATION.md` for policy-level guidance. Core points:
 - `src/ydchat/scripts/quickstart_tiny.ps1`
 - `src/ydchat/scripts/serve.sh`
 
+## Excel bot one-file run (PowerShell)
+
+If you prefer running by file name instead of long CLI commands, use:
+
+- `train_excel_bot.ps1`
+- `chat_excel_bot.ps1`
+
+From project root:
+
+```powershell
+.\train_excel_bot.ps1
+.\chat_excel_bot.ps1
+```
+
+By default, `train_excel_bot.ps1` exports a single model file: `checkpoints/YDCHAT.pt`.
+
+Optional flags:
+
+```powershell
+.\train_excel_bot.ps1 -MaxSteps 1500
+.\train_excel_bot.ps1 -KeepAllCheckpoints
+.\chat_excel_bot.ps1 -Device cuda
+```
+
+If script execution is blocked in PowerShell:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
 ## License
 
 This repository ships with `Proprietary - All Rights Reserved` by default (`LICENSE`).

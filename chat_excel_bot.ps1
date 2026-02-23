@@ -1,6 +1,6 @@
 param(
     [string]$Device = "cpu",
-    [string]$Checkpoint = "checkpoints/excel-bot/last.pt",
+    [string]$Checkpoint = "checkpoints/YDCHAT.pt",
     [switch]$DryRun
 )
 
