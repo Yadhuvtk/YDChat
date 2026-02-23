@@ -1,0 +1,43 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ydchat"
+version = "0.1.0"
+description = "YDChat: original decoder-only language model stack from scratch"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "YDChat"}]
+license = {text = "Proprietary - All Rights Reserved"}
+dependencies = [
+  "torch>=2.2.0",
+  "numpy>=1.24.0",
+  "PyYAML>=6.0",
+  "sentencepiece>=0.2.0",
+  "fastapi>=0.110.0",
+  "uvicorn>=0.29.0",
+  "pydantic>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[project.scripts]
+ydchat-train = "ydchat.train.pretrain:main"
+ydchat-sft = "ydchat.train.sft:main"
+ydchat-generate = "ydchat.infer.generate:main"
+ydchat-serve = "ydchat.infer.server:main"
+ydchat-chat = "ydchat.infer.chat_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
